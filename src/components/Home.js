@@ -10,7 +10,7 @@ import "./Home.scss"
 
 const Home = () => {
 
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [segmentName, setSegmentName] = useState('');
   const [status, setStatus] = useState([])
   const [value, setValue] = useState([]);
@@ -56,7 +56,9 @@ const Home = () => {
   };
 
   const addNewSchema = () => {
+    if(status.length !== 0){
     value.push(status)
+    }
     setRender()
   };
 
@@ -78,7 +80,7 @@ const Home = () => {
   // setCity(newArray.find(e => e.label === "City")?.label);
   // setState( newArray.find(e => e.label === "State")?.label);
     return await axios
-      .post("https://hooks.zapier.com/hooks/catch/13130040/bqx4t0d/", {
+      .post("https://hooks.zapier.com/hooks/catch/13130040/bqx5ltk/", {
         segment_name: segmentName,
         schema: [
           {first_name: newArray.find(e => e.label === " First Name")?.label || ""},
