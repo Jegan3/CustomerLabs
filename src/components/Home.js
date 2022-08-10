@@ -16,7 +16,6 @@ const Home = () => {
   const [value, setValue] = useState([]);
   const [render, setRender] = useReducer(x => x + 1, 0)
   const [addedDrop, setAddedDrop] = useState([])
-  const [data, setData] = useState(true)
   // const [firstName, setFirstName] = useState("")
   // const [lastName, setLastName] = useState("")
   // const [gender, setGender] = useState("")
@@ -59,7 +58,6 @@ const Home = () => {
   const addNewSchema = () => {
     if(status.length !== 0){
     value.push(status)
-    //setData(false)
     }
     setRender()
   };
