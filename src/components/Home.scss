@@ -1,0 +1,110 @@
+[data-theme="dark"] .site-multi-level-drawer-footer {
+    border-top: 1px solid #303030;
+    background: #1f1f1f;
+  }
+
+  .ant-drawer-header {
+    background-color: #39aebc;
+  }
+
+  .home-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+    color: #fff;
+    border-color: #39aebc;
+    background: #39aebc;
+}
+.ant-drawer-title {
+    flex: 1 1;
+    margin: 0;
+    color:#fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+.add-btn{
+    color: #41b494;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 2px 2px 0 0;
+    
+}
+.segment-body{
+    padding: 24px;
+}
+.ant-drawer-body {
+    flex-grow: 1;
+     padding: 0px;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.5715;
+    word-wrap: break-word;
+}
+.save-btn{
+    color:white;
+    background-color:#41b494 ;
+}
+.save-btn:hover, .save-btn:focus {
+    color: #41b494;
+    border-color: white;
+    background: #fff;
+}
+.row{
+ 
+    padding: 5px 5px 15px 5px;
+}
+.name-input{
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    border-color: #cccccc;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: space-between;
+    min-height: 38px;
+   
+}
+.segment-box{
+    border: solid;
+    border-color: #41b494;
+
+}
+.row-footer{
+    margin: 0px;
+    padding: 0px;
+}
+.para{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 15px;
+}
+ .name-label{
+     font-family: Arial, Helvetica, sans-serif;  
+    font-size: 15px;
+
+ }
+ .cancel-btn{
+    color: #fa0404;
+ }
