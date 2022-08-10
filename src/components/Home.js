@@ -16,6 +16,7 @@ const Home = () => {
   const [value, setValue] = useState([]);
   const [render, setRender] = useReducer(x => x + 1, 0)
   const [addedDrop, setAddedDrop] = useState([])
+  const [data, setData] = useState(true)
   // const [firstName, setFirstName] = useState("")
   // const [lastName, setLastName] = useState("")
   // const [gender, setGender] = useState("")
@@ -58,6 +59,7 @@ const Home = () => {
   const addNewSchema = () => {
     if(status.length !== 0){
     value.push(status)
+    //setData(false)
     }
     setRender()
   };
@@ -69,6 +71,10 @@ const Home = () => {
     setRender()
   }
   
+  const onReset =()=>{
+    setValue([]);
+    setAddedDrop([]);
+  }
 
   const onSave = async () => {
 
@@ -162,8 +168,14 @@ const Home = () => {
               options={results}
               isSearchable={false}
               isDisabled={!results.length ? true : false}
+              isClearable
             />
           </Row>
+          {!results.length&& <Row>
+          <Button className='save-btn' onClick={onReset}>
+              Reset
+            </Button>
+          </Row>}
           <Row>
             <div className='add-btn' onClick={addNewSchema}>+Add New schema</div>
           </Row>
