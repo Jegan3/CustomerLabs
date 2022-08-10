@@ -134,6 +134,10 @@ const Home = () => {
               </p>
             </div>
           </Row>
+          <Row className='circle'>
+            <div className='dot'><span className=" user-traits"></span>-user Traits</div>
+           <div className='dot'><span className =" group-traits"></span>-Group Traits</div> 
+          </Row>
           {newArray && newArray.length !== 0 && <div className='segment-box'>
             {newArray && newArray.map((item, index) => <Row>
               <div >
