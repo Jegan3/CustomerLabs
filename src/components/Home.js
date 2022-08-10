@@ -169,14 +169,14 @@ const Home = () => {
               isClearable
             />
           </Row>
-          {!results.length&& <Row>
-          <Button className='save-btn' onClick={onReset}>
+          {!results.length&& <Row className='save-bt-btn'>
+          <Button className='save-btn ' onClick={onReset}>
               Reset
             </Button>
           </Row>}
-          <Row>
+         {results.length&& <Row>
             <div className='add-btn' onClick={addNewSchema}>+Add New schema</div>
-          </Row>
+          </Row>}
         </div>
         <Row className='row-footer'>
           <div className='footer'> <Space>
